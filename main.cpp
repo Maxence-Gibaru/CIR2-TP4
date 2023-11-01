@@ -81,11 +81,11 @@ void exercise3() {
     // Vérifiez l'égalité entre deux vecteurs
     bool isEqual = vector1.isEqual(vector2);
 
-    std::cout << "Vector 1: (" << vector1.fromPoints().getX() << ", " << vector1.fromPoints().getY() << ") to (" << vector1.toPoints().getX() << ", " << vector1.toPoints().getY() << ")" << std::endl;
-    std::cout << "Vector 2: (" << vector2.fromPoints().getX() << ", " << vector2.fromPoints().getY() << ") to (" << vector2.toPoints().getX() << ", " << vector2.toPoints().getY() << ")" << std::endl;
+    cout << "Vector 1: (" << vector1.getStart().getX() << ", " << vector1.getStart().getY() << ") to (" << vector1.getEnd().getX() << ", " << vector1.getEnd().getY() << ")" << endl;
+    cout << "Vector 2: (" << vector2.getStart().getX() << ", " << vector2.getStart().getY() << ") to (" << vector2.getEnd().getX() << ", " << vector2.getEnd().getY() << ")" << endl;
 
-    std::cout << "Sum of vectors: (" << sum.fromPoints().getX() << ", " << sum.fromPoints().getY() << ") to (" << sum.toPoints().getX() << ", " << sum.toPoints().getY() << ")" << std::endl;
-    std::cout << "Scaled vector: (" << scaled.fromPoints().getX() << ", " << scaled.fromPoints().getY() << ") to (" << scaled.toPoints().getX() << ", " << scaled.toPoints().getY() << ")" << std::endl;
+    cout << "Sum of vectors: (" << sum.getStart().getX() << ", " << sum.getStart().getY() << ") to (" << sum.getEnd().getX() << ", " << sum.getEnd().getY() << ")" << endl;
+    cout << "Scaled vector1: (" << scaled.getStart().getX() << ", " << scaled.getStart().getY() << ") to (" << scaled.getEnd().getX() << ", " << scaled.getEnd().getY() << ")" << endl;
 
     if (isEqual) {
         std::cout << "Vector 1 and Vector 2 are equal." << std::endl;

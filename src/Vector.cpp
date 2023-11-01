@@ -9,6 +9,16 @@ Vector Vector::fromPoints(const Point2D& startPoint, const Point2D& endPoint) {
     return Vector(startPoint, endPoint);
 }
 
+// Getters
+
+Point2D Vector::getStart() const {
+    return start;
+}
+
+Point2D Vector::getEnd() const {
+    return end;
+}
+
 // Méthode pour calculer la somme de deux vecteurs
 Vector Vector::add(const Vector& other) const {
     Point2D newStart = start.add(other.start);

@@ -14,6 +14,10 @@ public:
     // Méthode pour construire un vecteur à partir de deux points
     static Vector fromPoints(const Point2D& startPoint, const Point2D& endPoint);
 
+    // getters
+    Point2D getStart() const;
+    Point2D getEnd() const;
+
     // Méthode pour calculer la somme de deux vecteurs
     Vector add(const Vector& other) const;
 
